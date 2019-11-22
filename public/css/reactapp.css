@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%; }
+
+header {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  padding: 0.5rem; }
+  header h1 {
+    padding: 0;
+    font-weight: normal; }
+
+#tasklist {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(100, 100, 100, 0.33);
+          box-shadow: 4px 4px 5px 0px rgba(100, 100, 100, 0.33); }
+
+.main-navigation .nav-link {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease; }
+  .main-navigation .nav-link:hover {
+    color: #c8c8c8;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease; }
+
+#addTaskForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(100, 100, 100, 0.33);
+          box-shadow: 4px 0px 5px 0px rgba(100, 100, 100, 0.33); }
+  #addTaskForm input[type='submit'] {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #535353;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease; }
+    #addTaskForm input[type='submit']:hover {
+      cursor: pointer;
+      background-color: #282828;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+      -webkit-transition: background-color 300ms ease;
+      transition: background-color 300ms ease; }
+  #addTaskForm input[type='text'] {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #e0e0e0; }
+
+#tasklist {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #tasklist .task-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dotted #323232; }
+    #tasklist .task-item:last-child {
+      border-bottom: none; }
+    #tasklist .task-item .completed {
+      color: #b4b4b4;
+      text-decoration: line-through; }
+    #tasklist .task-item label {
+      -webkit-box-flex: 10;
+          -ms-flex: 10;
+              flex: 10; }
+  #tasklist .remove-task {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: block;
+    margin-left: 0.5rem;
+    color: white;
+    background-color: #ff3232;
+    font-weight: bold;
+    font-size: 1.25rem;
+    height: 1.75rem;
+    max-width: 1.75rem;
+    border: none;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.33);
+            box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.33);
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease; }
+    #tasklist .remove-task:hover {
+      -webkit-box-shadow: inset 3px 3px 3px 0px rgba(150, 150, 150, 0.33);
+              box-shadow: inset 3px 3px 3px 0px rgba(150, 150, 150, 0.33);
+      background-color: #c84b4b;
+      -webkit-transition: background-color 300ms ease;
+      transition: background-color 300ms ease; }
+
+/*# sourceMappingURL=reactapp.css.map */
